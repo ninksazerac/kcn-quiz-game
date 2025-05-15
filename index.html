@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <title>คุณเหมือนสัตว์อะไร?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>🦁 คุณเหมือนสัตว์อะไร?</h1>
+      <div id="quiz">
+        <div id="question" class="question-text"></div>
+        <div id="choices"></div>
+        <button id="next-btn" class="btn hidden">ข้อต่อไป</button>
+      </div>
+      <div id="result" class="hidden">
+        <h2 id="result-title"></h2>
+        <!-- รูปผลลัพธ์ หรือ ตกแต่ง -->
+        <img id="result-image" src="" alt="รูปผลลัพธ์หรือตกแต่ง" />
+        <p id="result-description"></p>
+        <button onclick="location.reload()" class="btn">ลองเล่นใหม่</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
