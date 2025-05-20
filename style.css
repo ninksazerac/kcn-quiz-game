@@ -1,5 +1,5 @@
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: "Mali", cursive;
   background: linear-gradient(to right, #ffe8ec, #e0f7fa);
   margin: 0;
   padding: 50px 20px;
@@ -22,8 +22,9 @@ h1 {
 }
 
 .question-text {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .btn {
@@ -35,6 +36,7 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
+  font-family: "Mali", cursive;
 }
 
 .btn:hover {
@@ -66,11 +68,27 @@ h1 {
 }
 
 img {
-  max-width: 200px;
+  max-width: 250px;
   margin: 20px auto;
   display: block;
 }
 
 .hidden {
   display: none;
+}
+
+@keyframes shimmerGlow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #e0b3ff, 0 0 15px #d08cff;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #e0b3ff, 0 0 30px #d08cff;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #e0b3ff, 0 0 15px #b275df;
+  }
+}
+
+.shimmer-text {
+  animation: shimmerGlow 1.5s infinite;
 }
