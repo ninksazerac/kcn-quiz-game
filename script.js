@@ -18,7 +18,7 @@ const questions = [
     ],
   },
   {
-    question: "หากมีเวลา 1 วันเต็มโดยไม่มีภาระ คุณอยากใช้มันทำอะไร?",
+    question: "หากมีเวลา 1 วันเต็มโดยไม่มีภาระ<br>คุณอยากใช้มันทำอะไร?",
     choices: [
       { text: "วางแผนหรือลงมือทำสิ่งใหม่ ๆ ที่อาจทำรายได้", type: "งาน_เศรษฐกิจ" },
       { text: "ไปออกกำลังกาย นวด หรือดูแลสุขภาพ", type: "สุขภาพ" },
@@ -36,7 +36,7 @@ const questions = [
     ],
   },
   {
-    question: "ถ้าจะมีของขวัญวิเศษชิ้นหนึ่งหล่นลงมาตรงหน้า<br> คุณอยากให้มันเป็นอะไร?",
+    question: "ถ้าจะมีของขวัญวิเศษชิ้นหนึ่งหล่นลงมาตรงหน้า...<br>คุณอยากให้มันเป็นอะไร?",
     choices: [
       { text: "โอกาสดี ๆ ที่พาชีวิตมั่นคงขึ้น", type: "งาน_เศรษฐกิจ" },
       { text: "สุขภาพแข็งแรงทั้งกายและใจ ให้ตัวเองและคนที่รัก", type: "สุขภาพ" },
@@ -91,7 +91,7 @@ function shuffle(arr){
 
 function showQuestion() {
   const q = questions[currentQuestion];
-  questionElement.innerText = q.question;
+  questionElement.innerHTML = q.question;
   choicesElement.innerHTML = "";
   nextButton.classList.add("hidden");
   currentSelection = null;
